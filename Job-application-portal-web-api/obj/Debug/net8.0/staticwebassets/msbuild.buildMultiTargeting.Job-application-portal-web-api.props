@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Job-application-portal-web-api.props" />
+</Project>

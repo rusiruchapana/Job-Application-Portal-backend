@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "715r7mWoGQxUGRSOJ+Oaa80SG8EPpQ3NuaY57aJBIGs=",
+  "Source": "Job-application-portal-web-api",
+  "BasePath": "_content/Job-application-portal-web-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
