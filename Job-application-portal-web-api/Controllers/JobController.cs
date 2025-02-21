@@ -1,3 +1,5 @@
+using Job_application_portal_web_api.Dtos.Request;
+using Job_application_portal_web_api.Dtos.Response;
 using Job_application_portal_web_api.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,9 +14,13 @@ public class JobController: ControllerBase
     {
         _jobService = jobService;
     }
-    
-    
-    
-    
-    
+
+    public async Task<IActionResult> CreateJob(JobRequestDto jobRequestDto)
+    {
+        JobResponseDto jobResponseDto = await _jobService.CreateJob(jobRequestDto);
+        return null;
+    }
+
+
+
 }
