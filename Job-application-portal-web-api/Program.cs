@@ -1,4 +1,5 @@
 using Job_application_portal_web_api.Data;
+using Job_application_portal_web_api.Map;
 using Job_application_portal_web_api.Repositories;
 using Job_application_portal_web_api.Repositories.impl;
 using Job_application_portal_web_api.Services;
@@ -20,6 +21,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IJobService , JobService>();
 builder.Services.AddScoped<IJobRepository , JobRepository>();
+builder.Services.AddAutoMapper(typeof(AutomapperProfile));
 
 var app = builder.Build();
 
