@@ -5,8 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Job_application_portal_web_api.Controllers;
 
-[ApiController]
+
 [Route("api/[controller]")]
+[ApiController]
 public class JobController: ControllerBase
 {
     private readonly IJobService _jobService;
@@ -15,10 +16,11 @@ public class JobController: ControllerBase
         _jobService = jobService;
     }
 
+    [HttpPost]
     public async Task<IActionResult> CreateJob(JobRequestDto jobRequestDto)
     {
         JobResponseDto jobResponseDto = await _jobService.CreateJob(jobRequestDto);
-        return null;
+        return Ok(jobResponseDto);
     }
 
 
