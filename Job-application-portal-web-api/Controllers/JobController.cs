@@ -23,6 +23,13 @@ public class JobController: ControllerBase
         return Ok(jobResponseDto);
     }
 
+    [HttpGet]
+    public async Task<IActionResult> AllJobs()
+    {
+        List<JobResponseDto> jobResponseDtos = await _jobService.AllJobs();
+        return Ok(jobResponseDtos);
+    }
+
 
 
 }
