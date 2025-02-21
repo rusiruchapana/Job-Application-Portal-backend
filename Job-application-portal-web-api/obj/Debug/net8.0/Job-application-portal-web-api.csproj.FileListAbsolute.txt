@@ -104,3 +104,5 @@ C:\Users\umega\Desktop\Job application portal\Job-Application-Portal-backend\Job
 C:\Users\umega\Desktop\Job application portal\Job-Application-Portal-backend\Job-application-portal-web-api\obj\Debug\net8.0\Job-application-portal-web-api.pdb
 C:\Users\umega\Desktop\Job application portal\Job-Application-Portal-backend\Job-application-portal-web-api\obj\Debug\net8.0\Job-application-portal-web-api.genruntimeconfig.cache
 C:\Users\umega\Desktop\Job application portal\Job-Application-Portal-backend\Job-application-portal-web-api\obj\Debug\net8.0\ref\Job-application-portal-web-api.dll
+C:\Users\umega\Desktop\Job application portal\Job-Application-Portal-backend\Job-application-portal-web-api\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\umega\Desktop\Job application portal\Job-Application-Portal-backend\Job-application-portal-web-api\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
