@@ -6,4 +6,5 @@ namespace Job_application_portal_web_api.Services;
 public interface IJobService
 {
     Task<JobResponseDto> CreateJob(JobRequestDto jobRequestDto);
+    Task<List<JobResponseDto>> AllJobs();
 }
