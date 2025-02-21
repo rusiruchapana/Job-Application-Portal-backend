@@ -1,4 +1,8 @@
 using Job_application_portal_web_api.Data;
+using Job_application_portal_web_api.Repositories;
+using Job_application_portal_web_api.Repositories.impl;
+using Job_application_portal_web_api.Services;
+using Job_application_portal_web_api.Services.impl;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +17,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+builder.Services.AddScoped<IJobService , JobService>();
+builder.Services.AddScoped<IJobRepository , JobRepository>();
 
 var app = builder.Build();
 
@@ -24,6 +31,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.MapControllers();
 app.Run();
 
 
