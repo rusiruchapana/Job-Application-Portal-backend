@@ -15,7 +15,6 @@ public class JobService: IJobService
 
     public async Task<JobResponseDto> CreateJob(JobRequestDto jobRequestDto)
     {
-        
         return null;
     }
 }
