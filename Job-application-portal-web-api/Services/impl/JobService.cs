@@ -22,4 +22,10 @@ public class JobService: IJobService
         Job job = await _jobRepository.CreateJob(_mapper.Map<Job>(jobRequestDto));
         return _mapper.Map<JobResponseDto>(job);
     }
+
+    public async Task<List<JobResponseDto>> AllJobs()
+    {
+        List<Job> jobs = await _jobRepository.AllJobs();
+        return _mapper.Map<List<JobResponseDto>>(jobs);
+    }
 }
