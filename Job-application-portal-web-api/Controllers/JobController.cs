@@ -31,5 +31,16 @@ public class JobController: ControllerBase
     }
 
 
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetJobById(int id)
+    {
+        JobResponseDto jobResponse = await _jobService.GetJobById(id);  
+        if (jobResponse==null)
+        {
+            return BadRequest();
+        }
+        return Ok(jobResponse);
+    }
+
 
 }
